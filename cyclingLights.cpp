@@ -7,11 +7,12 @@ void setup() {
 }
 
 void loop() {
-    oneAfterAnotherNoLoop();
-    
+oneAfterAnotherLoop();
+}
+
 void oneAfterAnotherLoop()
 {
-  int DelayTime = 100;
+  int DelayTime = 50;
 
   // Turning on the LED
   for(int i = 0; i <= 8; i++){
@@ -19,5 +20,7 @@ void oneAfterAnotherLoop()
     digitalWrite(ledPins[i-1], LOW);
     delay(DelayTime);  
   }
-  
+
+           
+   
 }
